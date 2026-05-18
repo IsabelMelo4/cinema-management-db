@@ -15,8 +15,13 @@ Projeto de banco de dados desenvolvido para gerenciamento de cinema e venda de i
 # Estrutura do Projeto
 
 ```txt
-postegrees/ → Scripts SQL
-docs/       → Diagramas e imagens
+📁 postgres
+ ┣ schema.sql      → Estrutura do banco
+ ┣ inserts.sql     → Dados para teste
+ ┗ queries.sql     → Consultas SQL
+
+📁 docs
+ ┗ ModeloConceitual.pngs
 ```
 
 ---
@@ -29,17 +34,38 @@ docs/       → Diagramas e imagens
 
 # Como Executar
 
+Como Executar o Projeto
+
+## 1. Clone o repositório
+
+```bash
+git clone https://github.com/IsabelMelo4/cinema-management-db.git
+```
+
+---
+
+## 2. Execute o script principal
+
 Execute o arquivo:
 
 ```sql
 schema.sql
 ```
 
-Depois, se quiser popular o banco:
+para criar toda a estrutura do banco.
+
+---
+
+## 3. Popular o banco 
+
+Execute:
 
 ```sql
 inserts.sql
 ```
+
+para inserir dados de teste.
+
 
 ---
 
