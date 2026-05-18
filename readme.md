@@ -26,7 +26,7 @@ Projeto de banco de dados desenvolvido para gerenciamento de cinema e venda de i
 
 ---
 
-# Modelo Relacional
+# Modelo Conceitual 
 
 ![Modelo Relacional](docs/ModeloConceitual.png)
 
