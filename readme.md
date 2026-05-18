@@ -16,12 +16,12 @@ Projeto de banco de dados desenvolvido para gerenciamento de cinema e venda de i
 
 ```txt
 📁 postgres
- ┣ schema.sql      → Estrutura do banco
- ┣ inserts.sql     → Dados para teste
- ┗ queries.sql     → Consultas SQL
+  schema.sql     
+  inserts.sql     
+  queries.sql     
 
 📁 docs
- ┗ ModeloConceitual.pngs
+  ModeloConceitual.pngs
 ```
 
 ---
@@ -69,6 +69,3 @@ para inserir dados de teste.
 
 ---
 
-# Desenvolvedora
-
-Isabel Melo
