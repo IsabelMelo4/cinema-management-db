@@ -31,7 +31,7 @@ Projeto de banco de dados desenvolvido para gerenciamento de cinemas, sessões e
 
 
 
-#  Modelo Relacional
+#  Modelo Conceitual
 
 <div align="center">
 
