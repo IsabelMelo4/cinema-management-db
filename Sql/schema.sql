@@ -2,7 +2,7 @@
 create table cinema(
 
 id serial primary key,
-nome varchar(200),
+nome varchar NOT NULL (200),
 localizacao varchar (200)
 
 );
@@ -84,3 +84,45 @@ FOREIGN KEY(id_sala)
 REFERENCES sala(id);
 
 */
+
+
+ALTER TABLE usuario
+ALTER COLUMN nome SET NOT NULL,
+ALTER COLUMN email SET NOT NULL,
+ALTER COLUMN senha SET NOT NULL;
+
+alter table pagamento
+alter column forma_de_pagamento set not null;
+
+alter table filme 
+alter column nome set not null,
+alter column duracao set not null,
+alter column sinopse set not null;
+
+alter table ingresso
+alter column assento set not null,
+alter column tipo set not null,
+alter column valor set not null;
+
+alter table cinema 
+alter column nome set not null;
+
+alter table sessao
+alter column data_sessao set not null,
+alter column horario set not null;
+
+alter table genero 
+alter column nome set not null;
+
+alter table sala 
+alter column capacidade set not null;
+
+ALTER TABLE ingresso 
+ADD id_filme INT;
+
+ALTER TABLE ingresso
+ADD CONSTRAINT fk_id_filme
+FOREIGN KEY (id_filme) REFERENCES filme(id);
+
+alter table ingresso 
+alter column id_filme set not null;
